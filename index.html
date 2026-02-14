@@ -6,7 +6,6 @@
     <title>FastPassIE - Get Your Irish Driving Test Faster</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
         body {
             font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
             margin: 0;
@@ -19,7 +18,6 @@
             background-size: cover;
             background-color: #f4f7f6; /* Fallback in case image fails to load */
         }
-
         .container {
             max-width: 800px;
             margin: 40px auto;
@@ -28,7 +26,6 @@
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             border-radius: 12px;
         }
-
         .site-header {
             display: flex;
             align-items: center;
@@ -46,7 +43,6 @@
         .site-logo:hover {
             transform: scale(1.05);
         }
-
         /* New Menu Styles */
         .menu-button {
             background: none;
@@ -82,7 +78,6 @@
         .dropdown-menu a:hover {
             background: rgba(255,255,255,0.1);
         }
-
         h1 {
             text-align: center;
             color: #003d82;
@@ -99,7 +94,6 @@
             margin-bottom: 20px;
             font-size: 1.1em;
         }
-
         .about-us {
             background-color: #f8f9fa;
             padding: 30px;
@@ -118,7 +112,6 @@
             border: 3px solid #fff;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-
         .how-it-works {
             margin: 40px 0;
             text-align: center;
@@ -151,7 +144,6 @@
             font-size: 1em;
             color: #555;
         }
-
         .benefits {
             background-color: #f8f9fa;
             padding: 25px;
@@ -181,14 +173,12 @@
             font-weight: bold;
             margin-right: 10px;
         }
-
         .testimonial-bridge {
             text-align: center;
             font-style: italic;
             color: #666;
             margin: 40px 0 20px 0;
         }
-
         .testimonials {
             margin: 40px 0;
         }
@@ -223,7 +213,6 @@
             font-style: normal;
             color: #555;
         }
-
         .cta {
             text-align: center;
             margin: 40px 0;
@@ -262,7 +251,6 @@
             transform: translateY(-4px);
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
         }
-
         .guarantee-badge {
             display: flex;
             align-items: center;
@@ -276,7 +264,6 @@
             margin-right: 10px;
             color: #ffc107;
         }
-
         .faq {
             margin-top: 50px;
             padding-top: 30px;
@@ -312,7 +299,6 @@
         .faq-item.active p {
             display: block;
         }
-
         footer {
             text-align: center;
             padding: 20px;
@@ -321,7 +307,6 @@
             color: white;
             border-radius: 8px;
         }
-
         /* New CSS for hover effect on PC/laptop */
         @media (hover: hover) and (pointer: fine) {
             .faq-item:hover p {
@@ -332,23 +317,12 @@
                 color: #007bff;
             }
         }
-
         @keyframes fadeIn {
-            from {
-                opacity: 0;
-                max-height: 0;
-            }
-            to {
-                opacity: 1;
-                max-height: 500px; /* Adjust based on your content */
-            }
+            from { opacity: 0; max-height: 0; }
+            to { opacity: 1; max-height: 500px; /* Adjust based on your content */ }
         }
-
         /* Menu Toggle Script */
-        .dropdown-menu.show {
-            display: block;
-        }
-
+        .dropdown-menu.show { display: block; }
         /* Coming Soon Page Styles (Simple text only) */
         .coming-soon-page {
             display: none;
@@ -395,21 +369,37 @@
             transform: translateY(-4px);
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
         }
-
-        /* Mobile-only: Remove full-page background, apply road.jpg + white overlay ONLY inside .container */
+        /* Mobile-only: Remove full-page background, apply a sleek grey colour */
         @media (max-width: 768px) {
             body {
-                background: #f4f7f6; /* Remove road.jpg from full page */
-                background-image: none;
+                background: #e0e0e0; /* Sleek grey colour */
+                background-image: none; /* Remove road.jpg from full page */
             }
             .container {
-                background: url('road.jpg') no-repeat center center;
-                background-size: cover;
-                background-color: rgba(255, 255, 255, 0.85); /* White overlay to grey out image */
-                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-                border-radius: 12px;
-                padding: 40px;
+                /* The container background remains white */
+                background: #ffffff;
                 margin: 20px 15px;
+                padding: 30px;
+            }
+            .site-header {
+                padding: 15px 20px;
+            }
+            .site-logo {
+                max-height: 80px;
+            }
+            .dropdown-menu {
+                right: 20px;
+                top: 50px;
+            }
+            h1 {
+                font-size: 2.2em;
+            }
+            .subtitle {
+                font-size: 1.1em;
+            }
+            .cta-button {
+                padding: 15px 35px;
+                font-size: 18px;
             }
         }
     </style>
@@ -425,12 +415,10 @@
             <a href="coming-soon.html" target="_blank">How to Get Insured After a Driving Ban</a>
         </div>
     </header>
-
     <div class="container">
         <h1>Your Irish Driving Test, Faster. Ditch the Waitlist.</h1>
         <p class="subtitle">Get the proven method to find and book an earlier driving test in days, not months.</p>
         <p>Our simple guide shows you the exact steps to find cancellation driving test slots fast. Stop letting the waiting list hold you back from work, travel, and freedom. For just €15, you can get on the road.</p>
-
         <div class="benefits">
             <h2>What You Get:</h2>
             <ul>
@@ -441,11 +429,9 @@
                 <li>Instant digital access after purchase</li>
             </ul>
         </div>
-
         <div class="testimonial-bridge">
             Don't just take our word for it—see what our customers have achieved.
         </div>
-
         <div class="testimonials">
             <h2>What Our Customers Say</h2>
             <div class="testimonial-card">
@@ -465,7 +451,6 @@
                 <strong>- Jan Nowak, Limerick</strong>
             </div>
         </div>
-
         <div class="cta">
             <p class="price-tag">Get Instant Access for Only €15</p>
             <p class="delivery-info">PDF guide emailed between 10am-5pm, please give me time due to influx of messages, I will get back to you!</p>
@@ -478,7 +463,6 @@
                 <span>30-Day Money-Back Guarantee</span>
             </div>
         </div>
-
         <div class="faq">
             <h2>Frequently Asked Questions</h2>
             <div class="faq-item">
@@ -499,18 +483,15 @@
             </div>
         </div>
     </div>
-
     <footer>
         <p>&copy; 2026 FastPassIE. All rights reserved.</p>
     </footer>
-
     <script>
         // Toggle dropdown menu
         function toggleMenu() {
             const menu = document.getElementById('dropdownMenu');
             menu.classList.toggle('show');
         }
-
         // Close menu when clicking outside
         window.onclick = function(event) {
             if (!event.target.matches('.menu-button')) {
@@ -520,7 +501,6 @@
                 }
             }
         }
-
         // For mobile users, keep the click-to-open functionality
         const faqItems = document.querySelectorAll('.faq-item h3');
         faqItems.forEach(item => {
@@ -530,10 +510,8 @@
             });
         });
     </script>
-
     <!-- Tidio Live Chat -->
     <script src="//code.tidio.co/zhumwl1whg5q32xqqa466bz8pa7vciqy.js" async></script>
     <!-- End Tidio Live Chat -->
-
 </body>
 </html>
