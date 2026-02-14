@@ -46,7 +46,7 @@
             display: flex;
             align-items: center;
             padding: 20px 40px;
-            background: #2f2f3b; /* Changed to dark grey to match footer */
+            background: #343a40;
             border-bottom: 1px solid #e9ecef;
         }
         .site-logo {
@@ -272,6 +272,11 @@
             cursor: pointer;
             margin-bottom: 10px;
             font-size: 1.2em;
+            /* Add a subtle hover effect for PC users */
+            transition: color 0.2s ease;
+        }
+        .faq-item h3:hover {
+            color: #007bff;
         }
         .faq-item p {
             display: none;
@@ -291,6 +296,28 @@
             background: #343a40;
             color: white;
             border-radius: 8px;
+        }
+
+        /* New CSS for hover effect on PC/laptop */
+        @media (hover: hover) and (pointer: fine) {
+            .faq-item:hover p {
+                display: block;
+                animation: fadeIn 0.3s ease-in;
+            }
+            .faq-item:hover h3 {
+                color: #007bff;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                max-height: 0;
+            }
+            to {
+                opacity: 1;
+                max-height: 500px; /* Adjust based on your content */
+            }
         }
     </style>
 </head>
@@ -377,6 +404,7 @@
     </footer>
 
     <script>
+        // For mobile users, keep the click-to-open functionality
         const faqItems = document.querySelectorAll('.faq-item h3');
         faqItems.forEach(item => {
             item.addEventListener('click', () => {
