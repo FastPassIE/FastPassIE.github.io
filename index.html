@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FastPassIE - Get Your Irish Driving Test Faster</title>
     <style>
-        /* 1. Sleek & Professional Background */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f7f6; /* Fallback */
+            background-color: #f4f7f6;
             color: #333;
             line-height: 1.6;
             position: relative;
             min-height: 100vh;
         }
 
-        /* Added background pseudo-element for the pattern */
         body::before {
             content: "";
             position: fixed;
@@ -26,7 +26,7 @@
             width: 100%;
             height: 100%;
             background-image: 
-                linear-gradient(rgba(244, 247, 246, 0.9), rgba(244, 247, 246, 0.9)),
+                linear-gradient(rgba(244, 247, 246, 0.92), rgba(244, 247, 246, 0.92)),
                 radial-gradient(circle at 20% 80%, rgba(0, 123, 255, 0.05) 0%, transparent 50%),
                 radial-gradient(circle at 80% 20%, rgba(0, 86, 179, 0.07) 0%, transparent 50%),
                 repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.02) 0px, rgba(0, 0, 0, 0.02) 1px, transparent 1px, transparent 10px);
@@ -42,7 +42,6 @@
             border-radius: 12px;
         }
 
-        /* 2. Logo size unchanged, header kept clean */
         .site-header {
             text-align: center;
             padding: 30px 0;
@@ -51,7 +50,7 @@
         }
         .site-logo {
             height: auto;
-            max-height: 120px; /* Size unchanged */
+            max-height: 120px;
             width: auto;
             transition: transform 0.3s ease;
         }
@@ -74,6 +73,58 @@
         p {
             margin-bottom: 20px;
             font-size: 1.1em;
+        }
+
+        .about-us {
+            background-color: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+            margin: 30px 0;
+            text-align: center;
+            border: 1px solid #e9ecef;
+        }
+        .about-us .team-photo-placeholder {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #ccc;
+            margin: 0 auto 20px auto;
+            display: block;
+            border: 3px solid #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .how-it-works {
+            margin: 40px 0;
+            text-align: center;
+        }
+        .how-it-works h2 {
+            margin-bottom: 30px;
+            color: #333;
+            font-size: 2em;
+        }
+        .steps {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+        .step {
+            flex-basis: 30%;
+            min-width: 200px;
+        }
+        .step-icon {
+            font-size: 2.5em;
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+        .step h3 {
+            color: #003d82;
+            margin-bottom: 10px;
+        }
+        .step p {
+            font-size: 1em;
+            color: #555;
         }
 
         .benefits {
@@ -104,6 +155,13 @@
             color: #28a745;
             font-weight: bold;
             margin-right: 10px;
+        }
+
+        .testimonial-bridge {
+            text-align: center;
+            font-style: italic;
+            color: #666;
+            margin: 40px 0 20px 0;
         }
 
         .testimonials {
@@ -157,7 +215,7 @@
         }
         .cta .delivery-info {
             font-size: 1.2em;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
         .cta-button {
             background: #ffffff;
@@ -179,15 +237,19 @@
             transform: translateY(-4px);
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
         }
-        .security-badges {
+
+        .guarantee-badge {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             margin-top: 20px;
-            font-size: 0.8em;
-            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9em;
+            color: rgba(255, 255, 255, 0.9);
         }
-        .security-badges img {
-            height: 20px;
-            margin: 0 5px;
-            vertical-align: middle;
+        .guarantee-badge .shield-icon {
+            font-size: 1.5em;
+            margin-right: 10px;
+            color: #ffc107;
         }
 
         .faq {
@@ -237,9 +299,9 @@
     </header>
 
     <div class="container">
-        <h1>Skip the Driving Test Waitlist!</h1>
-        <p class="subtitle">Tired of waiting months for your driving test? Get an earlier date in days.</p>
-        <p>Our simple guide shows you the proven method to find and book cancellation driving test slots fast. Stop letting the waiting list hold you back from work, travel, and freedom. For just €15, you can get on the road.</p>
+        <h1>Stop Losing Time & Money to the Driving Test Waitlist</h1>
+        <p class="subtitle">Get the proven method to find and book an earlier driving test in days, not months.</p>
+        <p>Our simple guide shows you the exact steps to find cancellation driving test slots fast. Stop letting the waiting list hold you back from work, travel, and freedom. For just €15, you can get on the road.</p>
 
         <div class="benefits">
             <h2>What You Get:</h2>
@@ -252,23 +314,27 @@
             </ul>
         </div>
 
+        <div class="testimonial-bridge">
+            Don't just take our word for it—see what our customers have achieved.
+        </div>
+
         <div class="testimonials">
             <h2>What Our Customers Say</h2>
             <div class="testimonial-card">
-                <p>"Sound, this guide is class. Was stuck waiting for months in Rathgar. Followed the steps, got past the online queue no bother, and nabbed a slot for the following week. A bit of genius for 15 quid, so it was."</p>
-                <strong>- Conor, Dublin</strong>
+                <p>"This guide is fantastic. My original test was in July, but I found a cancellation for three weeks later using the method. It's straightforward and it actually works. Great value."</p>
+                <strong>- A. O'Connell, Dublin</strong>
             </div>
             <div class="testimonial-card">
-                <p>"Absolute lifesaver, this! I was raging, looking at a July date. Got the guide, gave it a go, and I'm after getting a test for this Friday. Couldn't believe it. Delighted with myself!"</p>
-                <strong>- Siobhán, Galway</strong>
+                <p>"I was so stressed waiting for a test date. This guide helped me find a slot within a week. The instructions are very clear. Highly recommend for anyone stuck in the queue."</p>
+                <strong>- Priya N., Cork</strong>
             </div>
             <div class="testimonial-card">
-                <p>"To be honest, I thought it was some sort of scam. But I was desperate to get my test for a new job. It's dead simple, and it actually works. Got a test three weeks early. Fair play to ye."</p>
-                <strong>- Seamus, Cork</strong>
+                <p>"Honestly, I thought it was a long shot, but I was desperate. It worked exactly as described. Got a test a month ahead of my schedule. Very happy with the result."</p>
+                <strong>- Tom K., Galway</strong>
             </div>
             <div class="testimonial-card">
-                <p>"This is exactly what I needed. The waiting list was a nightmare altogether. The guide is straightforward and does exactly what it says on the tin. Grand stuff."</p>
-                <strong>- Niamh, Limerick</strong>
+                <p>"A very useful guide. The waiting list was a nightmare. This saved me a lot of time and hassle. The process is simple and easy to follow. Worth the purchase."</p>
+                <strong>- Jan Nowak, Limerick</strong>
             </div>
         </div>
 
@@ -278,9 +344,9 @@
             <form action="https://revolut.me/xotix" method="get" target="_blank" style="display: inline;">
                 <button type="submit" class="cta-button">Buy Now & Get Guide</button>
             </form>
-            <div class="security-badges">
-                <img src="https://via.placeholder.com/50x20/ffffff/000000?text=SSL" alt="SSL Secure"> 
-                <img src="https://via.placeholder.com/80x20/ffffff/000000?text=Secure+Checkout" alt="Secure Checkout">
+            <div class="guarantee-badge">
+                <span class="shield-icon">🛡️</span>
+                <span>30-Day Money-Back Guarantee</span>
             </div>
         </div>
 
@@ -288,7 +354,7 @@
             <h2>Frequently Asked Questions</h2>
             <div class="faq-item">
                 <h3>How does the guide work?</h3>
-                <p>We provide a step-by-step PDF guide that teaches you a legal and effective method to constantly check for and secure cancelled driving test appointments on the official RSA portal without being locked out for 24 hours.</p>
+                <p>We provide a step-by-step PDF guide that teaches you a legal and effective method to constantly check for and secure cancellation driving tests on the official RSA portal without being rate limited for 24 hours.</p>
             </div>
             <div class="faq-item">
                 <h3>Is this guaranteed to get me a test?</h3>
@@ -310,7 +376,6 @@
     </footer>
 
     <script>
-        // Simple FAQ toggle script
         const faqItems = document.querySelectorAll('.faq-item h3');
         faqItems.forEach(item => {
             item.addEventListener('click', () => {
