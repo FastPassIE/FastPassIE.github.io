@@ -45,7 +45,7 @@
         .site-header {
             display: flex;
             align-items: center;
-            justify-content: space-between; /* Added to push menu to the right */
+            justify-content: space-between;
             padding: 20px 40px;
             background: #2f2f3b;
             border-bottom: 1px solid #e9ecef;
@@ -361,6 +361,53 @@
         .dropdown-menu.show {
             display: block;
         }
+
+        /* Coming Soon Page Styles (Simple text only) */
+        .coming-soon-page {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #f4f7f6;
+            z-index: 9999;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            overflow-y: auto;
+        }
+        .coming-soon-title {
+            font-size: 5em;
+            color: #003d82;
+            margin: 100px auto 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .coming-soon-subtitle {
+            font-size: 1.5em;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        .coming-soon-button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .coming-soon-button:hover {
+            background: #0056b3;
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
     </style>
 </head>
 <body>
@@ -369,11 +416,9 @@
         <!-- New Menu Button -->
         <button class="menu-button" onclick="toggleMenu()">☰ Products</button>
         <div class="dropdown-menu" id="dropdownMenu">
-            <a href="https://gumroad.com/l/cheaper-insurance" target="_blank">Cheaper Car Insurance for Learners & New Drivers</a>
-            <a href="https://gumroad.com/l/insured-after-ban" target="_blank">How to Get Insured After a Driving Ban</a>
-            <a href="https://gumroad.com/l/car-tax-guide" target="_blank">How to Pay Car Tax Online (Irish Guide)</a>
-            <a href="https://gumroad.com/l/roadside-assistance" target="_blank">Best Roadside Assistance Plans for Irish Drivers</a>
-            <a href="https://gumroad.com/l/learner-car-hacks" target="_blank">Learner Driver Car Hacks: Save Money & Stay Safe</a>
+            <a href="https://gumroad.com/l/fastpassie" target="_blank">How to Get a Cancellation Test Quick</a>
+            <a href="coming-soon.html" target="_blank">Cheaper Car Insurance Tips for Learners & Newly Licensed Drivers</a>
+            <a href="coming-soon.html" target="_blank">How to Get Insured After a Driving Ban</a>
         </div>
     </header>
 
